@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Style Homepage</title>
+    <style>
+        /* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5b5555;
+}
+
+.background {
+    background: url('your-image-path.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 30%;
+}
+
+.logo {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.shortcuts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.shortcut {
+    text-align: center;
+    color: white;
+}
+
+.shortcut img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+img:hover{
+    background-color: rgba(240, 248, 255, 0.348);
+    backdrop-filter: blur(10px);
+}
+.shortcut p {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <header class="header">
+            <div class="right-links">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+            </div>
+        </header>
+        <div class="content">
+            <div class="logo">Google</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Google or type a URL">
+            </div>
+            <div class="shortcuts">
+                <div class="shortcut">
+                    <img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube">
+                    <p>YouTube</p>
+                </div>
+                <div class="shortcut">
+                    <img src="https://img.icons8.com/color/48/github.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="shortcut">
+                    <img src="https://img.icons8.com/color/48/gmail.png" alt="Gmail">
+                    <p>G-mail</p>
+                </div>
+                <div class="shortcut">
+                    <img src="https://img.icons8.com/color/48/google-drive.png" alt="Drive">
+                    <p>Drive</p>
+                </div>
+                <div class="shortcut">
+                    <img src="https://img.icons8.com/color/48/chatgpt.png" alt="Chat GPT">
+                    <p>Chat GPT</p>
+                </div>
+                <div class="shortcut">
+                    <img src="https://img.icons8.com/color/48/plus--v1.png" alt="Add">
+                    <p>Add shortcut</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Photo by Tim Pryce</p>
+        </footer>
+    </div>
+</body>
+</html>

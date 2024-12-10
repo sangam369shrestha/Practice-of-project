@@ -1,0 +1,4 @@
+{
+    "status": "error",
+    "messages": ["Name is required.", "Valid email is required."]
+}
